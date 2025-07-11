@@ -1,10 +1,11 @@
 "use client"
 
 import { motion } from "framer-motion";
+import { ReactNode } from "react";
 
 type Props = {
     index: number;
-    data: Array<string>;
+    data: Array<string | ReactNode>;
   };
 
 function FooterColumn({ index, data }: Props) {
